@@ -1,8 +1,3 @@
-/// <reference lib="dom"/>
-/// <reference types="electron"/>
-/// <reference types="node"/>
-import {openSystemPreferences as electronUtilOpenSystemPreferences} from 'electron-util';
-
 /**
 Check whether or not the current app has the required permissions to record the screen
 
@@ -51,4 +46,4 @@ openSystemPreferences().then(() => console.log('Opened'));
 
 @returns A Promise that resolves when the window is open
 */
-export const openSystemPreferences: () =>  ReturnType<typeof electronUtilOpenSystemPreferences>;
+export const openSystemPreferences: () =>  any;
